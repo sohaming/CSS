@@ -1,0 +1,15 @@
+<html>
+<head>
+<p id="result"></p> 
+<script> 
+function fun()
+ {
+ var w=window.outerWidth; 
+ var h=window.outerHeight; 
+ var txt="Window size: width=" + w + ", height=" + h; 
+  document.getElementById("result").innerHTML=txt; 
+} 
+window.onresize=fun;
+</script>
+</head>
+</html>

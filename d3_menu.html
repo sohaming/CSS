@@ -1,0 +1,22 @@
+<!--Menu-->
+<html>
+<head>
+<script>
+function fun1()
+{
+var s=document.getElementById("select");
+var str=s.options[s.selectedIndex].value;
+alert("Selected Item is="+str);
+}
+</script>
+<body>
+<select id="select">
+<option>apple</option>
+<option>banana</option>
+<option>custeredapple</option>
+<option>dragaonfruit</option>
+</select>
+<button onclick="fun1()">show</button>
+</body>
+</head>
+</html>

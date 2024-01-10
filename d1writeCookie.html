@@ -1,0 +1,25 @@
+<html> 
+<body> 
+<form name="frm1" action=""> 
+Enter name: 
+<input type="text" name="customer" /> 
+<input type="button" value="Set Cookie" onclick="wrtC();" /> 
+</form> 
+
+<script type="text/javascript"> 
+
+function wrtC() 
+{ 
+if(document.frm1.customer.value=="") 
+ { 
+ alert("Please enter value :"); 
+ return; 
+ } 
+
+val=escape(document.frm1.customer.value)+";"; 
+document.cookie="name :"+ val; 
+document.write("Setting Cookies : " + "name=" + val); 
+} 
+</script> 
+</body> 
+</html> 

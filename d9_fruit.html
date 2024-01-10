@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Form</title>
+<script language="javascript" type="text/javascript">
+function fun1(val)
+{
+with(document.forms.frm1)
+{
+if(val==1)
+{
+arr[0].text="Apple";
+arr[0].value=1;
+arr[1].text="Banana";
+arr[1].value=2;
+arr[2].text="CusteredApple";
+arr[2].value=3;
+}
+if(val == 2)
+{
+arr[0].text="Tometo";
+arr[0].value=1;
+arr[1].text="Onion";
+arr[1].value=2;
+arr[2].text="Potato";
+arr[2].value=3;
+}
+}
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+<p>
+<select name="arr" size="2">
+<option value=1>Apple
+<option value=2>Banana
+<option value=3>CusteredApple
+</select>
+<br>
+
+<input type="radio" name="grp1" value=1 
+checked="true" onclick="fun1(this.value)">Fruits
+<input type="radio" name="grp1" value=2 
+onclick="fun1(this.value)">Vegetables
+<br>
+<input name="Reset" value="Reset" type="reset">
+ </p>
+</form>
+</body>
+</html>

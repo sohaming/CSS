@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type= "text/javascript">
+function readC() 
+{
+var v1=document.cookie;
+document.write("All Cookies : " + v1 );
+allC=v1.split(';');
+ 
+for(var i=0;i<allC.length;i++) 
+{
+nm=allC[i].split('=')[0];
+val=allC[i].split('=')[1];
+document.write ("Key is : "+ nm +" and Value is : "+val);
+ }
+ }
+</script>
+</head>
+
+<body>
+<form name="frm1" action = "">
+<p> click Button:</p>
+<input type="button" value="Get Cookie" onclick="readC()"/>
+</form>
+</body>
+</html>

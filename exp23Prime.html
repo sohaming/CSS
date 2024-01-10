@@ -1,0 +1,64 @@
+<!Prime num>
+<html>
+<head>
+<script type="text/javascript">
+
+function calPrimeNum()
+{
+ var strt=parseInt(document.numbers.firstNum.value);
+ var e=parseInt(document.numbers.secondNum.value);
+ var num=new Array();
+ var d=strt;
+ while(d<=e)
+{
+if(isPrime(d)==true)
+ {
+  num[num.length] = d;
+  }
+  d=d+1;
+}
+ if(num.length==0)
+{
+document.getElementById('output_content').innerHTML = "There were no prime no within the range.";
+ }
+ else
+ {
+ Prime_num(num);
+  }
+}
+function isPrime(num)
+{
+var flag = true;
+for(var i=2; i<=Math.ceil(num/2); i++)
+ {
+ if((num%i)==0)
+ {
+  flag=false;
+  break;
+ }
+}
+return flag;    
+ }
+
+ function Prime_num(primes)
+{
+ var html="<h2>Prime Numbers</h2>";
+ for (i=0;i<primes.length;i++)
+ {
+  html+=primes[i] + "<br/>";
+ }
+ document.getElementById('output_content').innerHTML = html;
+ }
+
+</script>
+</head>
+<body>
+<form name="numbers">
+Beginning Number: <input type="text" name="firstNum" />
+End Number: <input type="text" name="secondNum" />
+<input type="button" value="Find Prime Numbers" onclick="calPrimeNum()" />
+</form>
+<div id="output_content">
+</div>
+</body>
+</html>

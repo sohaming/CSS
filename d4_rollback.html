@@ -1,0 +1,35 @@
+<!--Rollover-->
+<!--<html>
+<body>
+<a>
+<img src="aa.jpeg" onmouseover src="a1.jpeg" onmouseout src="a.jpeg">
+</a>
+</body>
+</html>
+-->
+
+<html>
+<head>
+<script>
+function fun1()
+{
+document.pic.src='a.jpeg';
+document.getElementById('p').innerHTML="First Image.";
+}
+function fun2()
+{
+document.pic.src='a1.jpeg';
+document.getElementById('p').innerHTML="Second Image.";
+
+}
+</script>
+</head>
+<body>
+<a onmouseover="fun1()"><h1>First Image</h1></a>
+<a onmouseout="fun2()"><h1>Second Image</h1></a>
+<a>
+<img src='aa.jpeg'name='pic'>
+</a>
+<p id="p">Images</p>
+</body>
+</html>

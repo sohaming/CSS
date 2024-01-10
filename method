@@ -1,0 +1,29 @@
+Important Methods and Properties of Arrays in JavaScript
+length: find the length of an array.
+unshift(): add an element to the beginning of an array.
+push(): add a new element at the end of an array.
+shift(): remove the first element from an array.
+pop(): remove the last element from an array.
+indexOf(): get the first index of a value in an array.
+lastIndexOf(): get the last index of an element in an array.
+reverse(): reverse an array.
+sort(): sort an array in ascending, descending, and alphabetical order.
+concat(): concatenate two or more arrays.
+join(): convert an array into a string.
+toString(): get a string from an array.
+from(): get an array from an iterable object.
+includes(): check if the specified value exists in an array.
+isArray(): check if an object is an array or not.
+slice(): slice an array.
+splice(): add and/or remove array elements.
+find(): find the first element that satisfies the given condition.
+findIndex(): get the index of the first element that meets the given condition.
+entries(): convert an array to an iterator object.
+every(): check if all values in an array are true.
+fill(): overwrites the specified array by filling the specified elements.
+filter(): filter an array based on a condition.
+forEach(): call a function for each item in an array.
+map(): map an array to create a new updated array.
+
+Please note: A few methods, which are very rarely used in rare cases, are skipped.
+

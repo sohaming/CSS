@@ -1,0 +1,28 @@
+<html>
+<body>
+<p id="mypar"></p>
+<script>
+     <!-- let myval = 10;-->
+	 var myval=prompt("Enter a number :");
+      if(myval<0) {
+         document.getElementById("mypar").innerHTML = "Negative number";
+      }
+      else if(myval > 100) {
+         document.getElementById("mypar").innerHTML = "Greater than 100";
+      }
+      else if(myval>0) {
+         document.getElementById("mypar").innerHTML = "Positive number";
+      }
+      else if(myval == 10) {
+         document.getElementById("mypar").innerHTML = "Equal to 10";
+      }
+      else if(myval == 0) {
+         document.getElementById("mypar").innerHTML = "Equal to 0";
+      }
+      else {
+         document.getElementById("mypar").innerHTML = "Not a number";
+      }
+   </script>
+   
+</body>
+</html>

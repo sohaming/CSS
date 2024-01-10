@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function show()
+{
+num=document.getElementById("t1").value;
+var ch1=/^\d{12}$/;
+var ch2= /^\d{16}$/;
+if(num!='') 
+{
+ if(!num.match(ch1))
+ {
+  alert("Invalid aadhar Number");
+  return false;
+ }
+}
+if(num!='')
+ {
+ if(!num.match(ch2))
+  {
+  alert("Invalid Anum Number");
+  return false;
+  }
+ }
+}
+</script>
+</head>
+<body>
+Enter the Adhar Card No.<input type="text" id="t1"><br>
+<button onclick="show()">Adhar Card</button>
+</body>
+</html>

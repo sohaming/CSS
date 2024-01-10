@@ -1,0 +1,26 @@
+<!--Dynamically-->
+
+<html>
+<body>
+<form>
+<select id="mySelect" size="8">
+<option>Apple</option>
+<option>Pear</option>
+<option>Banana</option>
+<option>Kiwi</option>
+<option>Orange</option>
+</select>
+</form>
+<br>
+<button type="button" onclick="fun1()">Insert option</button>
+<script>
+function fun1() 
+{
+var x=document.getElementById("mySelect");
+var ch=document.createElement("option");
+ch.text=prompt("Enter Name=");
+x.add(ch);
+}
+</script>
+</body>
+</html>

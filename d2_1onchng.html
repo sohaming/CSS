@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function fun() 
+{
+  v1=document.forms[0].ch.value;
+  alert("U select internet browser "+v1);
+}
+</script>
+</head>
+<body>
+
+<form>
+Choose browser :
+  <select id="ch" onchange="fun()">
+    <option value="Chrome">Chrome</option>
+    <option value="Firefox">Firefox</option>
+	<option value="Opera">Opera</option>
+	<option value="Internet Explorer">Internet Explorer</option>
+   </select>
+</form>
+</body>
+</html>

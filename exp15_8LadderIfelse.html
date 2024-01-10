@@ -1,0 +1,45 @@
+<html>
+<body>
+
+   <p>Largest = <span id="res"></span></p>
+   
+   <script>
+   var m=prompt("Enter 1st number :");
+   var n=prompt("Enter 2nd number :");
+   var o=prompt("Enter 3rd number :");
+   var big;
+      <!--let m = 10, n = 8, o = 13, big;-->
+      if(m>n)
+      {
+         if(n>o)
+         {
+            big = m;
+         }
+         else
+         {
+            if(o>m)
+            {
+               big = o;
+            }
+            else
+            {
+               big = m;
+            }
+         }
+      }
+      else
+      {
+         if(n>o)
+         {
+            big = n;
+         }
+         else
+         {
+            big = o;
+         }
+      }
+      document.getElementById("res").innerHTML = big;
+   </script>
+   
+</body>
+</html>

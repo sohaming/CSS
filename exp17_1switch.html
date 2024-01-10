@@ -1,0 +1,82 @@
+<html>
+<body>
+   
+   <button onclick="myFun()">What Day is Today?</button>
+   <p>Today is: <span id="day">________</span></p>
+   <script>
+      function myFun()
+      {
+         let d;
+         switch(new Date().getDay())
+         {
+            case 0:
+               d = "Sunday";
+               break;
+            case 1:
+               d = "Monday";
+               break;
+            case 2:
+               d = "Tuesday";
+               break;
+            case 3:
+               d = "Wednesday";
+               break;
+            case 4:
+               d = "Thursday";
+               break;
+            case 5:
+               d = "Friday";
+               break;
+            case 6:
+               d = "Saturday";
+               break;
+         }
+         document.getElementById("day").innerHTML = d;
+      }
+   </script>
+   
+</body>
+</html>
+
+
+
+
+<!--
+<html>
+<body>
+   
+   <button onclick="myf()">What Day is Today?</button>
+   <p>Today is: <span id="myspan">________</span></p>
+   <script>
+      function myf()
+      {
+         let dy;
+         switch(new Date().getDay())
+         {
+            case 1:
+               dy = "Monday";
+               break;
+            case 2:
+               dy = "Tuesday";
+               break;
+            case 3:
+               dy = "Wednesday";
+               break;
+            case 4:
+               dy = "Thursday";
+               break;
+            case 5:
+               dy = "Friday";
+               break;
+            case 0:
+            case 6:
+               dy = "Weekend Day";
+               break;
+         }
+         document.getElementById("myspan").innerHTML = dy;
+      }
+   </script>
+   
+</body>
+</html>
+-->

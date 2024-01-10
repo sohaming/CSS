@@ -1,0 +1,30 @@
+<!DOCTYPE html: If else>
+<html>
+<body>
+<p>Click the button to get a time-based greeting:</p>
+<button onclick="fun1()">Try it</button>
+
+<p id="demo"></p>
+<script>
+function fun1()
+ {
+  var msg;
+  var time=new Date().getHours();
+  if (time<10) 
+     {
+    msg = "Good morning";
+     } 
+	 else if(time<20) 
+	 {
+     msg="Good day";
+     } 
+	 else 
+	 {
+    msg = "Good evening";
+     }
+  document.getElementById("demo").innerHTML = msg;
+}
+</script>
+
+</body>
+</html>

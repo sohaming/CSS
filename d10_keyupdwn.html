@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function color(color) 
+{
+  document.forms[0].t1.style.background=color;
+}
+</script>
+</head>
+<body>
+
+<form>
+Write Msg:<br>
+<input 
+type="text" 
+onkeydown="color('gray')"
+onkeyup="color('pink')"
+name="t1">
+</form>
+
+</body>
+</html>

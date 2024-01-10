@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function wrtC()
+ {
+var now=new Date();
+now.setMonth(now.getMonth()+1);
+val=escape(document.frm1.customer.value)+";"
+document.cookie="name 		: " +val;
+document.cookie="expires	: " +now.toUTCString()+";"
+document.write ("Setting Cookies : " + "name=" + val );
+
+document.write ("<br>Setting Cookies : " + "exp =" + now );
+ }
+</script>
+</head>
+
+<body>
+<form name="frm1" action="">
+ Enter name: <input type="text" name="customer"/>
+<input type="button" value="Set Cookie" onclick="wrtC()"/>
+</form>
+</body>
+
+</html>
